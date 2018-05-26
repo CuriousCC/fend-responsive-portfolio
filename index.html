@@ -8,22 +8,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
-        <header class="container heading">
-            <div class="logo">Logo</div>
-            <h1 class="name">Sil</h1>
+    <main class="wrapper">
+
+        <header class="header-container">
+            <div class="header__logo">
+                <img class="header__logo__img" src="images/logo.png" alt="CuriousCC-logo"></div>
+            <div class="header__title">
+                <h1 class="header__title__heading">Silviya Petkova</h1>
+                <h3 class="header__title__subheading"> Udacity Front End Developer Nanodegree Student</h3>
+            </div>
         </header>
-        <div>
-            <div class="banner">header-image</div>
-            <div class="container content">
-                <h3 class="featured">Featured work</h3>
-                <div class="portfolio-item"><img src="http://via.placeholder.com/600x450"><span>Project1</span></div>
-                <div class="portfolio-item"><img src="http://via.placeholder.com/600x450"><span>Project2</span></div>
-                <div class="portfolio-item"><img src="http://via.placeholder.com/600x450"><span>Project1</span></div>
+
+        <div class="banner">
+            <a target="_blank" href="https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001">
+                <img class="banner__img" src="images/Google-Developer-2.png" alt="Google and Udacity Front End Web Developer scholarship recepient">
+            </a>
+            </div>
+        <div class="portfolio">
+            <h3 class="portfolio__heading">Featured work</h3>
+            <div class="portfolio__content">
+                <div class="portfolio__item">
+                    <a target="_blank" href="#">
+                        <img src="images/animal-card-project.png" alt="image of the project called animal trading card">
+                        <div class="portfolio__item--overlay">
+                            <h4 class="portfolio__item--title">Project: Animal Trading Card </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__item">
+                    <a target="_blank" href="#">
+                        <img src="images/pam-project.png" alt="image of the project called pixel art maker">
+                        <div class="portfolio__item--overlay">
+                            <h4 class="portfolio__item--title">Project: Pixel Art Maker </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__item">
+                    <a target="_blank" href="#">
+                        <img src="images/coming-soon.png" alt="image showing that this project is coming soon">
+                        <div class="portfolio__item--overlay">
+                            <h4 class="portfolio__item--title">Project: Work in progress :) </h4>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-
-    </div>
+    </main>
+    <footer>
+        <ul class="footer__contact">
+            <li class="footer__contact__item">
+                <a href="#">
+                    <img class="icon" src="#" alt="#"
+                </a>
+            </li>
+            <li class="footer__contact__item">
+                <a href="#">
+                    <img class="icon" src="#" alt="#">
+                </a>
+            </li>
+            <li class="footer__contact__item">
+                <a href="#">
+                    <img class="icon" src="#" alt="#">
+                </a>
+            </li>
+        </ul>
+    </footer>
     
 </body>
 </html>
