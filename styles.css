@@ -12,11 +12,13 @@
 }
 
 body{
-
+    display: flex;
+    flex-direction: column;
 }
 
 img{
     width: 100%;
+    max-width: 100%;
 }
 
 a{
@@ -69,12 +71,14 @@ a{
 .portfolio{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    /* margin: 20px; */
     justify-content: space-evenly;
 }
 
 .portfolio__heading{
     width:100%;
+    text-align: center;
+    font-size: 3.5vw;
 }
 
 .portfolio__content{
@@ -85,8 +89,23 @@ a{
 .portfolio__item{
     margin-bottom: 20px;
     position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    width: calc((100% - 20px)/3); 
 }
 
+/* .portfolio__item:hover{
+    box-shadow: 4px 7px 3px grey;
+} */
+
+.portfolio__item:last-of-type{
+    margin-right: 0;
+} 
+
+
+.portfolio_img:hover{
+    transform: scale(1.10);
+}
 .portfolio__item--overlay{
     background-color: yellow;
     width: 100%;
@@ -108,15 +127,49 @@ a{
     opacity: 0.9;
 }
 
-.portfolio__item--title{
+/* .portfolio__link{
+    display: flex;
+} */
 
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
-footer{}
-.footer__contact{}
-.footer__contact__item{}
-.icon{}
+.footer__content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.footer__content__item{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footer__content__item:hover{
+    transform: scale(1.10);
+}
+
+.fa-github-square{
+    color: rgb(24, 15, 15);
+}
+
+.fa-twitter-square{
+    color: #00aced;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.footer__copyright{
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+}
 
 
 /* @media screen and (min-width: 600px){
@@ -130,13 +183,17 @@ footer{}
     }
 } */
 
-@media screen and (min-width:900px){
-    .wrapper{
-        max-width:75%;
+@media screen and (max-width: 600px){
+    .portfolio__content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 900px){
+    body{
+        max-width: 75%;
         margin: 0 auto;
     }
 }
 
-/*nexus 360x640
-//iPad 768x1024
-*/
+
